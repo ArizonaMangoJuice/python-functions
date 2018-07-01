@@ -25,7 +25,9 @@ def styleofDrinks():
             result[question] = ingredients.get(question)
     # print(result)
     constructDrink(result)
-    # return result
+    rerun = input('Want another drink?  ')
+    if rerun == 'y' or rerun == 'yes':
+        styleofDrinks()
 
 def constructDrink(preference):
     drinkList = []
